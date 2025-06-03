@@ -16,7 +16,7 @@ function App(): React.JSX.Element {
 
   return (
     <View style={styles.sectionContainer}>
- <Text>CHAT HOŞGELDİN</Text>
+ <Text>CHAT HOŞGELDİN test</Text>
     </View>
   );
 }
