@@ -7,6 +7,8 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
+    "remove-all": "rm -rf node_modules rm -rf yarn.lock rm -rf ios/build rm -rf ios/Pods rm -rf ios/main.jsbundle rm -rf ios/Podfile.lock rm -rf android/build rm -rf android/app/build yarn cache clean",
+    "build-jsbundle": "react-native start --reset-cache --verbose & npx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/main.jsbundle --assets-dest ios",
     "test": "jest"
   },
   "dependencies": {
