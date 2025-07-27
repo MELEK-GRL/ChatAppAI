@@ -1,32 +1,16 @@
-
 import React from 'react';
-
-import {
-
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-
-
+import { Provider } from 'react-redux';
+import store from './store/index';
+import RootNavigator from './src/navigation/RootNavigator';
+import SizeUpdater from './store/sizeUpdater';
 
 function App(): React.JSX.Element {
-console.log('--->melekkkk');
-
-
   return (
-    <View style={styles.sectionContainer}>
- <Text>CHAT HOŞGELDİN test</Text>
-    </View>
+    <Provider store={store}>
+      <SizeUpdater />
+      <RootNavigator />
+    </Provider>
   );
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-
-});
 
 export default App;
