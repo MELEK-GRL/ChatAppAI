@@ -78,8 +78,3 @@ backend/.env
 backend/.env
 backend/.env
 
-# Ortak .env dosyaları
-.env
-*.env
-backend/.env
-*.env.*
